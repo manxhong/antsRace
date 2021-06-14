@@ -53,7 +53,7 @@ const Login: React.FC = () => {
 
   const navigateToHome = async () => {
     const flag = await getItem();
-    if (flag) {
+    if (flag === 'done') {
       navigation.replace('Main');
     }
   };

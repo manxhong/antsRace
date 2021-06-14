@@ -35,7 +35,7 @@ import actions from '../redux/ant/actions';
 import {AntStateType} from '../redux/ant/types';
 import colors from '../constants/colors';
 
-import {Image, View, Text, FlatList} from 'react-native';
+import {Image, SafeAreaView, View, Text, FlatList} from 'react-native';
 
 import {sortAnts} from '../utlis';
 
@@ -137,7 +137,7 @@ const Home: React.FC = () => {
   };
 
   return (
-    <View style={styles.mainWrapper}>
+    <SafeAreaView style={styles.mainWrapper}>
       {!!ants.length && (
         <Text style={[styles.statusStyle, {color: statusColor}]}>{status}</Text>
       )}
@@ -177,7 +177,7 @@ const Home: React.FC = () => {
           </Animated.View>
         ))}
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
