@@ -41,3 +41,7 @@ npm run ios
 ```
 npm run android
 ```
+
+### `Login`
+Enter any username
+Enter any password with at least 6 characters
