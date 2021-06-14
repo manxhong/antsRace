@@ -1,4 +1,4 @@
-AntRace Take Home Challenge
+AntRace
 
 ## Setup
 
